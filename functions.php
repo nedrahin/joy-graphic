@@ -14,9 +14,11 @@
 		{
 			wp_enqueue_style( 'bootstrap-min', get_template_directory_uri().'/css/bootstrap.min.css', 'null', 'v4.0.0-beta', 'all' );
 			wp_enqueue_style( 'main', get_template_directory_uri().'/css/main.css', 'null', 'v1.0', 'all' );
+			wp_enqueue_style( 'sliderman', get_template_directory_uri().'/css/sliderman.css', 'null', 'v1.0', 'all' );
 			wp_enqueue_style( 'style', get_stylesheet_uri() );
 
-			wp_enqueue_script('jquery-min-js', get_template_directory_uri().'/js/jquery.min.js', 'null', 'v3.3.1', true);
+			// wp_enqueue_script('jquery-min-js', get_template_directory_uri().'/js/jquery.min.js', 'null', 'v3.3.1', true);
+			wp_enqueue_script('jquery');
 			wp_enqueue_script('popper-min-js', get_template_directory_uri().'/js/popper.min.js', 'null', 'Federico Zivolo 2017', true);
 			wp_enqueue_script('bootstrap-min-js', get_template_directory_uri().'/js/bootstrap.min.js', 'null', 'v4.0.0-beta', true);
 		}
